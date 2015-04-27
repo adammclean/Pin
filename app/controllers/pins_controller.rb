@@ -5,6 +5,7 @@ class PinsController < ApplicationController
   end
 
   def show
+    @pin = Pin.find(params[:id])
   end
 
   def new
